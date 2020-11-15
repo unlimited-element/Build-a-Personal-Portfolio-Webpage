@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Build a Personal Portfolio Webpage</title><br>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+
+<style>
+
+  body {
+    background-color: #D9D9D9;
+    color: navy;
+      background-image: url("https://raw.githubusercontent.com/unlimited-element/Build-a-Personal-Portfolio-Webpage/Images/Journeyman.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+  }
+
+  @media (max-width: 600px) {
+    body {
+      background-color: white;
+      color: black;
+      text-align: center;
+
+    }
+  }
+  nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #010040;
+    z-index: 10;
+    box-shadow: 5px 10px 18px black;
+  }
+
+  li {
+    list-style-type: none;
+    float: right;
+    padding: 14px 16px;
+  }
+
+  #welcome-section {
+    height: 625px;
+    width: 100%;
+    margin-top: 20rem;
+    text-align: center;
+  }
+
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #010040, navy;
+    font-weight: bolder;
+    font-size: 5rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    font-style: italic;
+
+  }
+
+  #projects {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 25rem;
+    /* background-color: #010040; */
+    opacity: 0.9;
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    #projects {
+      flex-direction: column;
+      width: 100vw;
+    }
+  }
+
+  .project-tile {
+    flex: 40%;
+    border-radius: 10%;
+    border-style: double;
+    border-width: thick;
+    border-color: white;
+}
+
+</style>
+
+</head>
+  <body>
+
+    <nav id="navbar">
+      <ul class="list">
+        <li><a href="#welcome-section">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#profile-link">Links</a></li>
+      </ul>
+    </nav>
+
+    <section id="welcome-section">
+        <div>
+            <h1>Julius Bolden<br>2020 Portfolio</h1>
+          </div>
+        <div id="bio">
+            <p>A collection of work as prepared for the completion of certification requirements for FreeCodeCamp.</p>
+          </div>
+      </section>
+
+      <section id="projects">
+          <span class="project-tile">
+              <a href="https://github.com/unlimited-element/prince-tribute"><img style="width: 80%" src="https://raw.githubusercontent.com/unlimited-element/prince-tribute/e52e603373b9e2e151244c85dfba3fed3f29e450/Prince%20Tribute%20Screenshot.jpg" alt="Prince tribute html page"></a>
+            </span>
+          <span class="project-tile">
+              <a href="https://github.com/unlimited-element/survey-project-freecodecamp"><img style="width: 80%"  src="https://github.com/unlimited-element/Build-a-Personal-Portfolio-Webpage/blob/Images/Survey%20Screenshot.jpg?raw=true" alt="Build a Personal Webpage html page"></a>
+            </span>
+          <span class="project-tile">
+              <a href="https://github.com/unlimited-element/Build-a-Product-Landing-Page"><img style="width: 80%" src="https://github.com/unlimited-element/Build-a-Personal-Portfolio-Webpage/blob/Images/Build%20a%20Landing%20Page%20Screenshot.jpg?raw=true" alt="Build a Landing Page html page"></a>
+            </span>
+          <span class="project-tile">
+              <a href="https://github.com/unlimited-element/Build-a-Tech-Doc-Page"><img style="width: 80%" src="https://github.com/unlimited-element/Build-a-Personal-Portfolio-Webpage/blob/Images/Build%20a%20Tech%20Doc%20Page%20Screenshot.jpg?raw=true" alt="Build a Landing Page html page"></a>
+            </span>
+        </section>
+      <br>
+      <div id="links">
+        <section>
+          <a id="profile-link" href="https://github.com/unlimited-element" target="_blank">
+              <img style="width: 5%" src="https://1000logos.net/wp-content/uploads/2018/11/GitHub-logo.png">
+            </a>
+        </section>
+      </div>
+  </body>
+</html>
